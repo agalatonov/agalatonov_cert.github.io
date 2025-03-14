@@ -6,7 +6,11 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: #f9f9f9;
+    background-color: #1c1238;
+}
+
+h1 {
+    color:  #fff;
 }
 
 /* Стили для страниц */
@@ -26,12 +30,12 @@ body {
 .nav-button {
     display: block;
     width: 100%;
-    max-width: 200px;
+    max-width: 350px;
     margin: 10px auto;
     padding: 10px;
     font-size: 16px;
     color: #fff;
-    background-color: #007BFF;
+    background-color: #5b238f;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -45,7 +49,7 @@ body {
     padding: 10px;
     font-size: 16px;
     color: #fff;
-    background-color: #6c757d;
+    background-color: #7d8994;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -55,20 +59,21 @@ body {
 .tab-bar {
     display: flex;
     justify-content: space-around;
-    background-color: #ffffff;
+    background-color: #2d1a63;
     padding: 10px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
+    align-content: center;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .tab-button {
     background: none;
-    border: none;
+    border: none; 
     padding: 10px;
     font-size: 14px;
-    color: #888;
+    color: #cac2c2;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -83,4 +88,56 @@ body {
 
 .tab-button span {
     margin-top: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    color: #fff;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-button {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    background-color: #5928a7;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.submit-button:hover,
+.submit-button:focus {
+  background-color: #F082AC;
+}
+
+.back-button {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    background-color: #7a6e8d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.back-button:hover,
+.back-button:focus {
+background-color: #dbbfca;
 }
