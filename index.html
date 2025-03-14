@@ -27,19 +27,19 @@
         <div class="create_certificate-form">
             <form id="create_certificateForm">
                 <div class="form-group">
-                    <label for="buyer_name">Имя пользователя:</label>
+                    <label for="buyer_name">Имя покупателя:</label>
                     <input type="text" id="buyer_name" name="buyer_name" required>
                 </div>
                 <div class="form-group">
-                    <label for="buyer_phone">Email:</label>
+                    <label for="buyer_phone">Телефон покупателя:</label>
                     <input type="text" id="buyer_phone" name="buyer_phone" required>
                 </div>
                 <div class="form-group">
-                    <label for="recipient_name">Пароль:</label>
+                    <label for="recipient_name">Имя получателя:</label>
                     <input type="text" id="recipient_name" name="recipient_name" required>
                 </div>
                 <div class="form-group">
-                    <label for="recipient_phone">Подтвердите пароль:</label>
+                    <label for="recipient_phone">Телефон получателя:</label>
                     <input type="password" id="recipient_phone" name="recipient_phone" required>
                 </div>
                 <div class="form-group">
@@ -81,64 +81,7 @@
     <!-- Страница 4 -->
     <div id="create_n_certificate" class="page">
         <h1>Создать сертификаты</h1>
-        <div class="create_certificate-form">
-            <form id="create_certificateForm">
-                <div class="form-group">
-                    <label for="buyer_name">Имя пользователя:</label>
-                    <input type="text" id="buyer_name" name="buyer_name" required>
-                </div>
-                <div class="form-group">
-                    <label for="buyer_phone">Email:</label>
-                    <input type="text" id="buyer_phone" name="buyer_phone" required>
-                </div>
-                <div class="form-group">
-                    <label for="recipient_name">Пароль:</label>
-                    <input type="text" id="recipient_name" name="recipient_name" required>
-                </div>
-                <div class="form-group">
-                    <label for="recipient_phone">Подтвердите пароль:</label>
-                    <input type="password" id="recipient_phone" name="recipient_phone" required>
-                </div>
-                <div class="form-group">
-                    <label for="amount">На сумму:</label>
-                    <input type="number" id="amount" name="amount" required>
-                </div>
-                <div class="form-group">
-                    <label for="cert_count">Кол-во сертификатов</label>
-                    <input type="number" id="cert_count" name="cert_count" required>
-                </div>
-                <button class="submit-button" type="submit">Создать</button>
-            </form>
-            <button class="back-button" onclick="goBack()">Назад</button>
-        </div>
-        <script src="https://telegram.org/js/telegram-web-app.js"></script>
-        <script>
-            let tg2 = window.Telegram.WebApp;
-            let submit2 = document.getElementById("submit-button");
-            tg.expand();
-    
-            submit.addEventListener("click", () => {
-                let buyerName = document.getElementById("buyer_name").value;
-                let buyerPhone = document.getElementById("buyer_phone").value;
-                let recipientName = document.getElementById("recipient_name").value;
-                let recipientPhone = document.getElementById("recipient_phone").value;
-                let amount = document.getElementById("amount").value;
-                let cert_count = document.getElementById("cert_count").value;
-    
-                let data ={
-                    buyer_name: buyer_name,
-                    buyerPhone: buyer_phone,
-                    recipientName: recipient_name,
-                    recipientPhone: recipient_phone,
-                    amount: amount,
-                    cert_count: cert_count
-                }
-    
-                tg.sendData(JSON.stringify(data));
-    
-                tg.close();
-            })
-        </script>
+        <div class="create_certificate-form">    
     </div>
 
     <!-- Tab Bar -->
